@@ -56,13 +56,13 @@
 
 #head{
 	
-	width: 26px;
+	width: 28px;
 	height: 24px;
 	background-color: red;
 
 	border-radius: 50%;
 
-	margin-left: 38px;
+	margin-left: 32px;
 	margin-top: 15px;
 
 }
@@ -90,7 +90,7 @@
 	border-radius: 50%;
 
 	margin-top: 10px;
-	margin-left: 18px;
+	margin-left: 19px;
 
 }
 
@@ -100,8 +100,8 @@
 	height: 0px;
 
 	border-bottom: 3px solid yellow;
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
 
 	margin-top: 11px;
 	margin-left: 10px;
@@ -113,8 +113,8 @@
 	width: 0px;
 	height: 0px;
 
-	border-top: 2px solid orange;
-	border-left: 2px solid transparent;
+	border-top: 3px solid orange;
+	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
 
 	margin-top: 15px;
@@ -126,15 +126,65 @@
 
 #body{
 	
-	width: 48px;
-	height: 54px;
+	width: 40px;
+	height: 50px;
 	background-color: red;
 
-	border-radius: 50%;
+	border-top-right-radius: 12%;
+	border-top-left-radius: 12%;
+	border-bottom-right-radius: 75%;
+	border-bottom-left-radius: 70%;
 
 	margin-left: 26px;
-	margin-top: 33px;
+	margin-top: 36px;
 
+}
+
+#left_wing{
+
+	width: 8px;
+	height: 45px;
+	background-color: red;
+
+	border-top-right-radius: 0%;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius: 60%;
+	border-bottom-right-radius: 90%;
+
+	margin-top: 38px;
+	margin-left: 20px;
+
+}
+
+#right_wing{
+
+	width: 8px;
+	height: 45px;
+	background-color: red;
+
+	border-top-right-radius: 100%;
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 90%;
+	border-bottom-right-radius: 60%;
+
+	margin-top: 37px;
+	margin-left: 64px;
+
+}
+
+#message{
+	position: relative;
+
+	text-align: center;
+	color: white;
+	font-size: 0.9em;
+
+	margin-top: 23px;
+	margin-left: -8px;
+
+	border: none;
+
+	z-index: 100;
 }
 
 #bird{
@@ -145,7 +195,7 @@
 	width: 100px;
 	height: 100px;
 
-	border: 1px solid pink;
+	border: 1px solid transparent;
 
 	margin-top: 10px;
 	margin-left: 10px;
@@ -153,13 +203,20 @@
 	z-index: 100;
 }
 
+#bird:hover{
+	animation: cuckoo 1s 1;
+}
+
 @keyframes cuckoo{
 
 	0%, 100%{
 
-		opacity: 0.5;
+		opacity: 0.1;
 	}
-	99%{
+	10%{
+		opacity: 1;
+	}
+	50%{
 		transform: scale(1.8, 1.8) translate( 0px, 40px);
 		opacity: 1;
 	}
