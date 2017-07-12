@@ -190,7 +190,7 @@
 #bird{
 	position: relative;
 
-	/* animation: cuckoo 3s 3; */
+	animation: cuckoo 60s infinite;
 
 	width: 100px;
 	height: 100px;
@@ -204,20 +204,23 @@
 }
 
 #bird:hover{
-	animation: cuckoo 1s 1;
+	animation: cuckoo 2s 1;
 }
 
 @keyframes cuckoo{
 
 	0%, 100%{
 
-		opacity: 0.1;
+		opacity: 0.0;
 	}
-	10%{
+	99%{
 		opacity: 1;
 	}
-	50%{
-		transform: scale(1.8, 1.8) translate( 0px, 40px);
+	99.5%{
+		transform: scale(1.8, 1.8) translate( 0px, 30px);
+		opacity: 1;
+	}
+	99.8%{
 		opacity: 1;
 	}
 
