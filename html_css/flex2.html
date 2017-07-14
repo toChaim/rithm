@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mock 2</title>
+	<style>
+		#container{
+			display: flex;
+			flex-direction: column;
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		header{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			border-top: 3px solid black;
+			border-right: 3px solid black;
+			border-left: 3px solid black;
+
+			width: 100%;
+			height: 4%;
+
+			font-family: sans-serif;
+		}
+		header p{
+			margin-left: 0.2em;
+		}
+		main{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			position: relative;
+
+			border: 4px solid black;
+
+			width: 100%;
+			height: 95%;
+		}
+		.row{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			
+			position: relative;
+
+			/* border: 1px dashed red; */
+			
+			width: 90%;
+			height: 17%;
+
+		}
+		.red{
+			border: 4px solid black;
+			
+			width: 23%;
+			height: 100%;
+
+
+			background-color: #EA989A;
+		}
+		.blue{
+			border: 4px solid black;
+
+			width: 70%;
+			height: 100%;
+
+
+			background-color: #A0C4F8;
+		}
+		.yellow{
+			border: 4px solid black;
+			width: 100%;
+			height: 90%;
+			margin: auto;
+
+			background-color: #FFE59A;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header><p>Mock 2</p></header>
+		<main>
+			<div class="row">
+				<div class="red"></div>
+				<div class="blue"></div>
+			</div>			
+			<div class="row">
+				<div class="red"></div>
+				<div class="blue"></div>
+			</div>			
+			<div class="row">
+				<div class="red"></div>
+				<div class="blue"></div>
+			</div>
+			<div class="row">
+				<footer class="yellow"></footer>
+			</div>
+		</main>
+		
+	</div>
+</body>
+</html>
