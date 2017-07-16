@@ -1,0 +1,11 @@
+body{
+	font-family: Verdana;
+	background-color: #54CCFF;
+}
+ul{
+	text-align: center;
+	list-style: none;
+}
+li::first-letter{
+	font-size: 1.5em;
+}
