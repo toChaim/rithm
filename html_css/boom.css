@@ -1,0 +1,43 @@
+div{
+	border: 1px dashed red;
+}
+#container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: row;
+	justify-content: center;
+	align-content: center;
+
+	//background-color: pink;
+
+}
+#boombox{
+	position: relative;
+
+	display: flex;
+	align-self: center;
+	width: 100px;
+	height: 100px;
+
+	background-color: lightblue;
+
+	text-align: center;
+	font-size: 1.25rem;
+}
+#boombox > p{
+	font-size: 1.25rem;
+	color: yellow;
+	visibility: hidden;
+}
+.explosion{
+	position: absolute;
+	float: right;
+	top: 50%;
+	left: 50%;
+	background-color: red;
+}
+#controls{
+	display: flex;
+	flex-basis: 40%;
+	align-self: center;
+}
