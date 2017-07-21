@@ -36,6 +36,8 @@ div{
 	left: 50%;
 	border-radius: 50%;
 	background-color: red;
+	border: none;
+	//box-shadow: inset 0px 0px 20px 10px white; 
 }
 #controls{
 	display: flex;
