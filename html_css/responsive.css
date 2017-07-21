@@ -12,12 +12,6 @@ div{
 	.col-4{
 		width: 50%;
 	}
-	.col-6{
-		width: 100%;
-	}
-	.col-12{
-		width: 100%;
-	}
 }
 @media screen and (min-width: 961px){
 	.col-4{
