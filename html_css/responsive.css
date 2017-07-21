@@ -2,17 +2,17 @@ div{
 	border: 1px dashed red;
 	height: 100px;
 }
-@media screen and (min-width: 1px) and (max-width: 765px){
-	.col-4{
-		width: 100%;
-	}
-	.col-6{
-		width: 100%;
-	}
-	.col-12{
-		width: 100%;
-	}
+
+.col-4{
+	width: 100%;
 }
+.col-6{
+	width: 100%;
+}
+.col-12{
+	width: 100%;
+}
+
 @media screen and (min-width: 766px) and (max-width: 960px){
 	.col-4{
 		width: 50%;
