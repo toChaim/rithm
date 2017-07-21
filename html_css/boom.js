@@ -5,9 +5,21 @@ $(document).ready(function () {
 
 		var $boom = $('<div>', {
 			class: 'explosion',
-			width: '5px',
-			height: '5px',
+			width: '0px',
+			height: '0px',
 		});
 		$(this).append($boom);
-	})
+		var radius = Math.floor(Math.random()*75) + 50;
+		$boom.animate({ 
+			width: radius,
+			height: radius,
+			left: '-=' + (radius)/2,
+			top: '-=' + (radius)/2, 
+		});
+	});
+
+	$('#reset').on('click', function () {
+		$('.explosion').remove();
+	});
+
 });
